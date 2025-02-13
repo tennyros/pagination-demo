@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: pagination-demo-test
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
+#  datasource:
+#    hikari:
+#      minimum-idle: 1
+#      maximum-pool-size: 5
+#      idle-timeout: 10000
+#      connection-timeout: 20000
+#      validation-timeout: 5000
