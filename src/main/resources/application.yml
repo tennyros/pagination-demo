@@ -1,0 +1,22 @@
+server:
+  port: 9998
+
+spring:
+  application:
+    name: pagination-demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pagination_demo
+    username: postgres
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
